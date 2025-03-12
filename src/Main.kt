@@ -9,7 +9,8 @@
  *
  * Oh, no! There are monkeys loose in your house. You
  * had better collect all their names so that you can
- * report them to the authorities!
+ * report them to the au
+ * thorities!
  */
 
 
@@ -111,7 +112,7 @@ fun showMonkeys(monkeyList: List<String>) {
 
     // Loop through the given list and show each monkey
     for ((i, monkeys) in monkeyList.withIndex()) {
-        println("$i: $monkeys")
+        println("${i+1}: $monkeys")
     }
 }
 
@@ -138,8 +139,8 @@ fun getNewMonkey(monkeyList: MutableList<String>) {
  *   There are no monkeys!
  */
 fun monkeyCounter(monkeyList: List<String>): String {
-    // return the number of monkeys in the list
-    return "MONKEY COUNT MESSAGE"   // FIXME!
+    var numMonkey = monkeyList.count()
+    return numMonkey.toString() //?
 }
 
 
@@ -147,7 +148,7 @@ fun monkeyCounter(monkeyList: List<String>): String {
  * Returns the name of the monkey
  */
 fun longestMonkeyName(monkeyList: List<String>): String {
-    // Loop through the list and find the longest name
+    for ((i, monkey) in monkeyList.withIndex()) {}
     return "MONKEY NAME HERE"   // FIXME!
 }
 
@@ -174,4 +175,3 @@ fun deleteLastMonkey(monkeyList: MutableList<String>) {
     // Show some feedback
     println("Removing monkey: NAME HERE")
 }
-
